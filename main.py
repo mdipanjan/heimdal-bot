@@ -1,6 +1,7 @@
 import os
 from telegram.ext import Updater, CommandHandler
 import subprocess
+TOKEN = os.environ['BOT_TOKEN']
 
 
 def start(update, context):
