@@ -59,7 +59,7 @@ def status(update, context):
     update.message.reply_text(check_screen_status(screen_name))
 
 
-updater = Updater(TOKEN, use_context=True)
+updater = Updater(BOT_TOKEN, use_context=True)
 running_screens = get_running_screens()
 
 updater.dispatcher.add_handler(CommandHandler('start', start))
